@@ -7,6 +7,7 @@ fun main() {
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
+    val hero = Hero() // Ini diasumsikan bahwa kelas Hero telah didefinisikan sebelumnya
 
 
     /**
@@ -15,6 +16,7 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
+    hero.setProfile("Agym Mahaputra", 20, 171)
 
 
 
@@ -23,7 +25,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 
     /**
@@ -58,14 +60,19 @@ fun main() {
     NusaVote -> jalan 5x, lari 4x, makan 4x, minum 4x, lompat 3x, duduk 2x
     Vortex -> jalan 2x, lari 1x, makan 2x, minum 1x, lompat 2x, duduk 4x
 
-    **/
+     **/
 
     /**
      * Latihan 4
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-
+    repeat(2) { hero.jalan() }
+    repeat(4) { hero.lari() }
+    repeat(3) { hero.makan() }
+    repeat(2) { hero.minum() }
+    repeat(1) { hero.lompat() }
+    repeat(2) { hero.duduk() }
 
 
     /**
@@ -73,7 +80,7 @@ fun main() {
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 
 }
